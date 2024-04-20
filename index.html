@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+    <link href="./output.css" rel="stylesheet">
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <title>My Portfolio</title>
+</head>
+
+<body class="bg-gray-900">
+
+        <nav class="p-5 bg-gray-900 shadow md:flex md:items-center 
+        md:justify-between w-auto">
+
+            <div class="flex justify-between items-center">
+
+                <span class="text-3xl cursor-pointer">
+                
+                    Aisha Yusuf
+                
+                </span>
+
+                <span class="text-3xl cursor-pointer mx-2 md:hidden block">
+
+                    <ion-icon name="menu"></ion-icon>
+                
+                </span>
+
+            </div>
+
+                <ul class="md:flex md:items-center z-[-1] md:z-auto 
+                md:static absolute bg-gray-900 w-full left-0 
+                md:w-auto md:py-0 py-4 md:pl-0 pl-7 md:opacity-100
+                opacity-0 top-[-400px] transition-all ease-in duration-500">
+
+                    <li class="mx-4 my-6 md:my-0"><a href="#Hero" class="text xl hover:text-gray-500 duration-500">Home</a></li>
+                    <li class="mx-4 my-6 md:my-0"><a href="#Skill" class="text xl hover:text-gray-500 duration-500">Skill</a></li>
+                    <li class="mx-4 my-6 md:my-0"><a href="#Project" class="text xl hover:text-gray-500 duration-500">Project</a></li>
+                    <li class="mx-4 my-6 md:my-0"><a href="#Contact" class="text xl hover:text-gray-500 duration-500">Contact</a></li>
+
+                </ul>
+
+        </nav>
+
+    <main>
+
+        <section id="Hero" class="h-150 bg-gray-700">
+
+            <div class="flex justify-between items-center md:flex-row flex-col-reverse">
+
+                <div class="md:w-[400px] mx-auto md:text-left text-center md:px-0 px-2">
+
+                    <div class="traking-[13px] text-5xl leading-[1.1]">
+
+                        <span class="font-thick">AISHA YUSUF</span>
+
+                    </div>
+
+                    <p class="mb-10">
+                        
+                        My name is Aisha Yusuf. I am a Computer Engineering student at Nile University of Nigeria, currently undertaking my IT placement at GOMYCODE, where I am focusing on studying Software Development
+
+                    </p>
+
+                </div>
+
+                <img src="photo-1455390582262-044cdead277a.avif" class="h-screen md:block hidden">
+
+                <!-- Image for Mobile screen -->
+                <img src="photo-1455390582262-044cdead277a.avif" class="md:hidden block w-full pb-7 mt-20">
+
+            </div>
+
+        </section>
+
+        <section id="Skill">
+
+            <div class=" mt-8 grid grid-cols-1 md:grid-cols-3 gap-x-4 gap-y-5">
+
+                <div class="p-20 bg-gray-700 text-center rounded-3xl shadow-2xl">Drawing Skills</div>
+                <div class="p-20 bg-gray-700 text-center rounded-3xl shadow-2xl">Writing Skills</div>
+                <div class="p-20 bg-gray-700 text-center rounded-3xl shadow-2xl">Animation Design</div>
+                <div class="p-20 bg-gray-700 text-center rounded-3xl shadow-2xl">Programming (Python, C++)</div>
+                <div class="p-20 bg-gray-700 text-center rounded-3xl shadow-2xl">Caligraphy</div>
+                <div class="p-20 bg-gray-700 text-center rounded-3xl shadow-2xl">Others...</div>
+
+            </div>
+
+        </section>
+
+        <section id="Project">
+
+            <div class="md:p-20 mt-10 grid grid-col-1 md:grid-cols-3 gap-x-4">
+
+                <div class="bg-gray-700 md:border-solid md:border-2 md:border-gray-800 rounded-3xl mb-10">
+
+                    <img src="My shop render (white).png" class="h-96 w-full rounded-3xl">
+                    <h1 class="text-3xl text-center mt-10">Three Dimension Shop</h1>
+                    <p class="text-sm text-center px-10 mb-10">Rendered image on blender a store that sells bottled water</p>
+    
+                </div>
+    
+                <div class="bg-gray-700 md:border-solid md:border-2 md:border-gray-800 rounded-3xl mb-10">
+    
+                    <img src="Chair 4 render.png" class="h-96 w-full rounded-3xl">
+                    <h1 class="text-3xl text-center mt-10">Three Dimension Chair</h1>
+                    <p class="text-sm text-center px-10 mb-10">Rendered image on blender of a modelled wooden chair</p>
+    
+                </div>
+    
+                <div class="bg-gray-700 md:border-solid md:border-2 md:border-gray-800 rounded-3xl mb-10">
+    
+                    <img src="Coffe shop tutorial render.png" class="h-96 rounded-3xl">
+                    <h1 class="text-3xl text-center mt-10">Three Dimension Coffee</h1>
+                    <p class="text-sml text-center px-10 mb-10">Rendered image on blender of a coffee shop</p>
+    
+                </div>
+
+            </div>
+
+        </section>
+
+        
+        <section id="Contact">
+
+            <form class="bg-gray-700 shadow-md rounded px-8 pt-6 pb-8 mb-4 border-solid border-2 border-gray-900 rounded-3xl">
+
+                <div class="mb-4">
+
+                    <label class="block text-gray-900 text-sm font-bold mb-2" for="name">Name</label>
+                    <input class="bg-gray-900 border-solid border-2 border-gray-900 shadow appearance-none border rounded w-full py-2 px-3 text-gray-900 leading-tight focus:outline-none focus:shadow-outline" type="text" placeholder="Enter your name">
+
+                </div>
+
+                <div class="mb-4">
+
+                    <label class="block text-gray-900 text-sm font-bold mb-2" for="email">Email</label>
+                    <input  class="bg-gray-900 border-solid border-2 border-gray-900 shadow appearance-none border rounded w-full py-2 px-3 text-gray-900 leading-tight focus:outline-none focus:shadow-outline" type="email" placeholder="Enter your email">
+
+                </div>
+
+                <div class="mb-4">
+                    <label class="block text-gray-900 text-sm font-bold mb-2" for="message">Message</label>
+                    <textarea class="bg-gray-900 border-solid border-2 border-gray-900 w-full shadow appearance-none border rounded w-full py-2 px-3 text-gray-900 leading-tight focus:outline-none focus:shadow-outline" name="message" id="message" cols="30" rows="10" placeholder="Send a message"></textarea>
+                </div>
+
+            </form>
+
+        </section>
+
+    </main>
+
+    <footer>
+
+        <ul class="md:flex md:justify-center :items-center">
+
+            <li class="mx-4 my-6 md:my-0"><i class='bx bxl-instagram-alt text-gray-500' ></i></li>
+            <li class="mx-4 my-6 md:my-0"><i class='bx bxl-youtube text-gray-500' ></i></li>
+            <li class="mx-4 my-6 md:my-0"><i class='bx bxl-whatsapp-square text-gray-500' ></i></li>
+            <li class="mx-4 my-6 md:my-0"><i class='bx bxl-twitter text-gray-500'></i></li>
+
+        </ul>
+
+        <p class="text-center text-gray-500 text-xs">
+            &copy;2024 Aisha Yusuf. All rights reserved.
+          </p>
+
+    </footer>
+
+</body>
+
+</html>
